@@ -1,0 +1,8 @@
+# Ignore Angular build cache
+.angular/cache/
+
+# Ignore Node modules
+node_modules/
+
+# Ignore built files
+dist/
