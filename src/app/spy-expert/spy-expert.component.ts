@@ -18,7 +18,7 @@ export class SpyExpertComponent implements OnInit, OnDestroy {
   advice: Advice = {} as Advice;
 
   ngOnInit(): void {
-    this.subscription = this.adviceService.getAdvice().subscribe((data: Advice) => { this.advice = data});
+    this.subscription = this.adviceService.getAdvice(1).subscribe((data: Advice) => { this.advice = data});
   }
 
   ngOnDestroy(): void {
